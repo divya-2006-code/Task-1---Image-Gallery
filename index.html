@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>My Image Gallery</h1>
+
+<!-- FILTER BUTTONS -->
+<div class="filters">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('nature')">Nature</button>
+    <button onclick="filterImages('city')">City</button>
+    <button onclick="filterImages('bird')">Bird</button>
+</div>
+
+<!-- GALLERY -->
+<div class="gallery">
+    <img src="images/img1.jpg" class="gallery-img" data-category="city">
+    <img src="images/img2.jpg" class="gallery-img" data-category="nature">
+    <img src="images/img3.jpg" class="gallery-img" data-category="nature">
+    <img src="images/img4.jpg" class="gallery-img" data-category="city">
+    <img src="images/img5.jpg" class="gallery-img" data-category="nature">
+    <img src="images/img6.jpg" class="gallery-img" data-category="nature">
+    <img src="images/img7.jpg" class="gallery-img" data-category="city">
+    <img src="images/img8.jpg" class="gallery-img" data-category="city">
+    <img src="images/img9.jpg" class="gallery-img" data-category="bird">
+    <img src="images/img10.jpg" class="gallery-img" data-category="bird">
+    <img src="images/img11.jpg" class="gallery-img" data-category="bird">
+
+
+
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+    <span class="close">&times;</span>
+    <img id="lightbox-img">
+
+    <button id="prev">Prev</button>
+    <button id="next">Next</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
